@@ -31,11 +31,11 @@ namespace csharp_oop_shop
             set { iva = value; }
         }
 
-        private Random myRand;
+        private static Random myRand = new Random();
 
         public Prodotto(string nome, string descrizione, double prezzo, double iva)
         {
-            myRand = new Random();
+            //myRand = new Random();
             this.Nome = nome;
             this.Descrizione = descrizione;
             this.Prezzo = prezzo;
